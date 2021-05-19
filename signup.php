@@ -49,7 +49,7 @@ if(mysqli_query($conn, $query)){
    ?>
 <body>
     <div>
-    <h1>Patient Care</h1>
+    <h1>Coviarmour</h1>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST" id="signup">
             <table>
             <tr>

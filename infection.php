@@ -34,22 +34,18 @@ if(!$conn){
 }
 if(isset($_POST['submit'])){
 $email = $_SESSION["email"];
-
-
-$name = $_SESSION["name"];
-$password = $_SESSION["password"];
 $day = $_POST['day'];
 $temp = $_POST['temp'];
 $oxylevel = $_POST['oxylevel'];
 
-$q = "INSERT INTO infection VALUES ('$name', '$day', '$temp', '$oxylevel')";
+$q = "INSERT INTO infection VALUES ('$email', '$day', '$temp', '$oxylevel')";
 if(mysqli_query($conn, $q)){
     echo "You have been registered successfully";
  }
  else{
      echo "Error:" . $q . "" . mysqli_error($conn);
  }
-$query = "SELECT * FROM infection WHERE name = '$name'";
+$query = "SELECT * FROM infection WHERE name = '$email'";
 $result = mysqli_query($conn, $query);
 $chart_data = '';
 while($row = mysqli_fetch_array($result))

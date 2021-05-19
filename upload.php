@@ -1,12 +1,9 @@
 <?php
-
 session_start();
 
-
-
-
 if(isset($_POST['submit'])){
-    $name = $_SESSION['name'];    
+$email = $_SESSION["email"];    
+    
 $file = rand(1000,100000)."-".$_FILES['file']['name'];
 $file_loc = $_FILES['file']['tmp_name'];
 $file_size = $_FILES['file']['size'];
@@ -24,7 +21,7 @@ if(!$conn){
 $new_size = $file_size/1024;
 $new_file_name = strtolower($file);
 $final_file = str_replace(' ', '-', $new_file_name);
-$query = "INSERT INTO report VALUES ('$name', '$final_file', '$file_type', '$new_size')";
+$query = "INSERT INTO report VALUES ('$email', '$final_file', '$file_type', '$new_size')";
         mysqli_query($conn, $query);
     if (move_uploaded_file($file_loc, $folder.$final_file)) {
         
@@ -33,7 +30,48 @@ $query = "INSERT INTO report VALUES ('$name', '$final_file', '$file_type', '$new
          else {
         echo "Sorry, there was an error uploading your file.";
       }
-      $conn->close();
+      
 }
-
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>File Name</th>
+                <th>File Size(KB)</th>
+                <th>View</th>
+            </tr>
+            <?php
+            $query = "SELECT file, size FROM report WHERE name = '$email'";
+            $result = mysqli_query($conn, $query);
+            ?>
+            <?php
+            $i=0;
+            while($row = mysqli_fetch_array($result)){
+                ?>    
+                
+                <tr>
+                    <td><?php echo $row["file"]?></td>
+                    <td><?php echo $row["size"]?></td>
+                    <td><a href="upload/<?php echo $row["file"]?>" target="_blank">View file</a></td>
+                    <!-- <td><a href="http://localhost/project/download.php?file=<?php $_FILES['file']['name']?>" target="_blank">Download</a></td> -->
+                </tr>
+                <?php
+            }
+                ?>
+            
+        </table>
+    </div>
+    <h4>Upload more files <a href="report.php">here</a></h4>
+    <h3><a href="logout.php">Logout</a></h3>
+</body>
+</html>
