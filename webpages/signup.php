@@ -48,9 +48,16 @@ if(mysqli_query($conn, $query)){
 }
    ?>
 <body>
+    <div class="sticky">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="signp.php" class="active">Sign up</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
     <div>
     <h1>Coviarmour</h1>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST" id="signup">
+        <form action="login.html" method="POST" id="signup">
             <table>
             <tr>
                     <th>

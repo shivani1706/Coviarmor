@@ -90,11 +90,11 @@ $conn->close();
         </form>
     </div>
     <a href="logout.php">Logout</a>
-    <div class="container" style="width:900px;">
+    <div class="container" style="width:100%;">
         <div id="chart"></div>
     </div>
     <h3 class="heading">Body temperature graph</h3>
-    <div class="container" style="width:900px;">
+    <div class="container" style="width:100%;">
         <div id="chart2"></div>
     </div>
     <h3 class="heading">Oxygen level graph</h3>
