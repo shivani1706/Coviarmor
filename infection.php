@@ -40,7 +40,7 @@ $oxylevel = $_POST['oxylevel'];
 
 $q = "INSERT INTO infection VALUES ('$email', '$day', '$temp', '$oxylevel')";
 if(mysqli_query($conn, $q)){
-    echo "You have been registered successfully";
+    echo " ";
  }
  else{
      echo "Error:" . $q . "" . mysqli_error($conn);

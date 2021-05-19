@@ -45,14 +45,12 @@ session_start();
     <p>Upload all your reports here and download them 24/7.</p>
     <form action="upload.php" method="POST" enctype="multipart/form-data">
     <div>
-    <input type="text" class="report" placeholder="Enter report's name" name="reportname">
-    </div>
-    <div>
          <input type="file" class="report" accept="pdf/*" name="file" required>
     </div>
     <div>
       <input class="report" type="submit" name="submit">
     </div>
+    <h4>View your uploaded files <a href="http://localhost/project/upload.php">here</a></h4>
 
 
 
