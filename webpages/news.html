@@ -5,9 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="news.css">
 </head>
 <body>
-    <div id="news" style="width: auto;">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="infection.php">Infection</a></li>
+        <li><a href="report.php">Reports</a></li>
+        <li><a href="cowin2.html">Cowin</a></li>
+        <li><a href="news.html" class="active">News</a></li>
+        <li><a href="symptoms.html">Symptoms</a></li>
+        <li style="float:right"><a href="logout.php">Logout</a></li>
+
+    </ul>
+    <div id="news">
     </div>
     <script>
         var url = "https://newsapi.org/v2/top-headlines?q=coronavirus&country=in&apiKey=7956cbea619049c2b35fc387612d0fbd";
@@ -19,11 +30,11 @@
             if(data.articles.length>0){
                 var news = document.getElementById("news");
                 for(var i=0; i<data.articles.length; i++){
-                    var row = `<h2>${data.articles[i].title}</h2>
+                    var row = `<h2>${i+1}. ${data.articles[i].title}</h2>
                                 <h5>${data.articles[i].publishedAt}</h5>
-                                <img src=${data.articles[i].urlToImage}>
+                                <img class="image" src=${data.articles[i].urlToImage}>
                                 <h4>${data.articles[i].description}... Read more <a href="${data.articles[i].url}" target="_blank">here</a></h4>
-                                <h5>Source : ${data.articles[i].source.name}</h6>` 
+                                <h5>Source : ${data.articles[i].source.name}</h5>` 
                     news.innerHTML += row;
                 }
             }

@@ -9,11 +9,11 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="infection.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+  <link rel="stylesheet" href="infection.css">
     <style type="text/css">
       #chart-container {
         width: 640px;
@@ -56,28 +56,38 @@ $chart_data = substr($chart_data, 0, -2);
 $conn->close();
 }
 ?>
+     <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="infection.php" class="active">Infection</a></li>
+        <li><a href="report.php">Reports</a></li>
+        <li><a href="cowin2.html">Cowin</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="symptoms.html">Symptoms</a></li>
+        <li style="float:right"><a href="logout.php">Logout</a></li>
 
-    <div>
+    </ul>
+
+    <div class="form">
         <form action="infection.php" method="POST">
             <table>
                 <tr>
                     <th>
                         <p>
-                            Day <input type="number" name="day" id="day">
+                            Day <input type="number" name="day" placeholder="1" id="day">
                         </p>
                     </th>
                 </tr>
                 <tr>
                     <th>
                         <p>
-                            Body temperature <input type="text" name="temp" id="temp">
+                            Body temperature <input type="text" name="temp" placeholder="Enter your body temperature" id="temp">
                         </p>
                     </th>
                 </tr>            
                 <tr>
                     <th>
                         <p>
-                            Oxygen level <input type="text" name="oxylevel" id="oxylevel">
+                            Oxygen level <input type="text" name="oxylevel" placeholder="Enter your oxygen level" id="oxylevel">
                         </p>
                     </th>
                 </tr>
@@ -89,7 +99,6 @@ $conn->close();
             </table>
         </form>
     </div>
-    <a href="logout.php">Logout</a>
     <div class="container" style="width:100%;">
         <div id="chart"></div>
     </div>
