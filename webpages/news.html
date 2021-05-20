@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="news" style="width: auto;">
+    </div>
+    <script>
+        var url = "https://newsapi.org/v2/top-headlines?q=coronavirus&country=in&apiKey=7956cbea619049c2b35fc387612d0fbd";
+
+        async function getNews() {
+            const response = await fetch(url);
+            const data = await response.json();
+            console.log(data);
+            if(data.articles.length>0){
+                var news = document.getElementById("news");
+                for(var i=0; i<data.articles.length; i++){
+                    var row = `<h2>${data.articles[i].title}</h2>
+                                <h5>${data.articles[i].publishedAt}</h5>
+                                <img src=${data.articles[i].urlToImage}>
+                                <h4>${data.articles[i].description}... Read more <a href="${data.articles[i].url}" target="_blank">here</a></h4>
+                                <h5>Source : ${data.articles[i].source.name}</h6>` 
+                    news.innerHTML += row;
+                }
+            }
+        }
+        getNews();
+    </script>
+</body>
+</html>

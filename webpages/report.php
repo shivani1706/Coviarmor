@@ -50,7 +50,7 @@ session_start();
     <div>
       <input class="report" type="submit" name="submit">
     </div>
-    <h4>View your uploaded files <a href="http://localhost/project/upload.php">here</a></h4>
+    <h4>View your uploaded files <a href="http://localhost/project/webpages/upload.php">here</a></h4>
 
 
 

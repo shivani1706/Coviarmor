@@ -6,10 +6,10 @@ if(!$_SESSION['auth']){
 ?>
 
 <h1>Welcome!</h1>
-<form action="http://localhost/project/infection.php" method="POST">
+<form action="http://localhost/project/webpages/infection.php" method="POST">
     <input type="submit" name="infection" id="infection" value="infection" >
 </form>
 
-<form action="http://localhost/project/report.php" method="POST">
+<form action="http://localhost/project/webpages/report.php" method="POST">
     <input type="submit" name="reports" id="reports" value="reports">
 </form>

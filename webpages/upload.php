@@ -44,6 +44,7 @@ $final_file = str_replace(' ', '-', $new_file_name);
             echo "Sorry, there was an error uploading your file.";
         }
     }
+    $conn->close();
 }
 ?>
 
@@ -64,7 +65,17 @@ $final_file = str_replace(' ', '-', $new_file_name);
                 <th>View</th>
             </tr>
             <?php
+            $server = "localhost";
+            $user = "root";
+            $password = "";
+            $database = "login";
+            $uploadok=1;
             
+            $conn = mysqli_connect($server, $user, $password, $database);
+            if(!$conn){
+                die("Connection failed: " . mysqli_connect_error());
+            }
+            $email = $_SESSION["email"];
             $query = "SELECT file, size FROM report WHERE name = '$email'";
             $result = mysqli_query($conn, $query);
             
