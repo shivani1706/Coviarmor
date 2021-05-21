@@ -89,6 +89,13 @@ session_start();
        h4{
         font-size: 1.5rem;
        }
+       .covirise{
+   text-decoration: none;
+   text-align: center;
+   color: white;
+  
+ }
+  
     
 
         
@@ -105,6 +112,8 @@ session_start();
         <li><a href="cowin2.html">Cowin</a></li>
         <li><a href="news.html">News</a></li>
         <li><a href="symptoms.html">Symptoms</a></li>
+        <li class="covirise"><a href="mychart.html">Covid-Rise</a></li>
+
         <li style="float:right"><a href="logout.php">Logout</a></li>
 
     </ul>
