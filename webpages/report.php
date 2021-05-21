@@ -78,7 +78,7 @@ session_start();
         }
         h2{
             text-align: center;
-            font-size: 2.5rem;
+            font-size: 2.1rem;
             font-family: 'Concert One', cursive;
         }
         .report{
