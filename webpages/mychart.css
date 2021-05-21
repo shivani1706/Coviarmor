@@ -16,8 +16,8 @@
     margin-top: -41px;
   }
   body{
-      background-image: url(/mychartbg.jpg);
-     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(/mychartbg.jpg);
+      background-image: url(../assets/mychartbg.jpg);
+     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../assets/mychartbg.jpg);
      background-size: cover;
     height: max-content;
     position: relative;

@@ -24,15 +24,23 @@ $new_file_name = strtolower($file);
 $final_file = str_replace(' ', '-', $new_file_name);
 
         if(file_exists($folder.$final_file)){
-            echo "Sorry, the file already exists";
+            ?>
+            <script>
+                alert("Sorry, the file already exists");
+            </script>    
+            <?php 
             $uploadok=0;
         }
         if($file_type != "application/pdf"){
-            echo "Sorry, only pdf file are allowed";
+            ?>
+            <script>
+                alert("Sorry, only pdf file are allowed");
+            </script>
+            <?php
             $uploadok=0;
         }
         if($uploadok==0){
-            echo "Sorry, the file could not be uploaded";
+            echo " ";
     }  
     else{
         if (move_uploaded_file($file_loc, $folder.$final_file)) {
@@ -41,7 +49,11 @@ $final_file = str_replace(' ', '-', $new_file_name);
                 echo "Your report has been uploaded successfully";
             }
             else {
-            echo "Sorry, there was an error uploading your file.";
+             ?>   
+            <script>    
+                alert("Sorry, there was an error uploading your file.");
+            </script>
+            <?php    
         }
     }
     $conn->close();
@@ -56,8 +68,125 @@ $final_file = str_replace(' ', '-', $new_file_name);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body{
+             margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        
+        .active {
+            background-color: #4CAF50;
+        }
+
+        li {
+            border-right: 1px solid #bbb;
+        }
+        
+        li:last-child {
+            border-right: none;
+        }
+        
+        body{
+             margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        
+        .active {
+            background-color: #4CAF50;
+        }
+
+        li {
+            border-right: 1px solid #bbb;
+        }
+        
+        li:last-child {
+            border-right: none;
+        }
+        
+        table, th, td{
+            border: 1px solid black;
+        }
+
+        table{
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 90%;
+            position: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        th,td{
+            padding: 15px;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {background-color: #f2f2f2;}
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            }
+    
+</style>
 <body>
-    <div>
+    <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="infection.php">Infection</a></li>
+        <li><a href="report.php" class="active">Reports</a></li>
+        <li><a href="cowin2.html">Cowin</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="symptoms.html">Symptoms</a></li>
+        <li style="float:right"><a href="logout.php">Logout</a></li>
+
+    </ul>
+    <div style="overflow-x:auto;">
         <table>
             <tr>
                 <th>File Name</th>
@@ -69,7 +198,7 @@ $final_file = str_replace(' ', '-', $new_file_name);
             $user = "root";
             $password = "";
             $database = "login";
-            $uploadok=1;
+            
             
             $conn = mysqli_connect($server, $user, $password, $database);
             if(!$conn){
@@ -78,7 +207,6 @@ $final_file = str_replace(' ', '-', $new_file_name);
             $email = $_SESSION["email"];
             $query = "SELECT file, size FROM report WHERE name = '$email'";
             $result = mysqli_query($conn, $query);
-            
             ?>
             <?php
             $i=0;
@@ -88,9 +216,8 @@ $final_file = str_replace(' ', '-', $new_file_name);
                 <tr>
                     <td><?php echo $row["file"]?></td>
                     <td><?php echo $row["size"]?></td>
-                    <td><a href="upload/<?php echo $row["file"]?>" target="_blank">View file</a></td>
-                    <!-- <td><a href="http://localhost/project/download.php?file=<?php $_FILES['file']['name']?>" target="_blank">Download</a></td> -->
-                </tr>
+                    <td><a style="text-decoration:none;" href="upload/<?php echo $row["file"]?>" target="_blank">View file</a></td>
+                </tr>       
                 <?php
             }
         
@@ -98,7 +225,6 @@ $final_file = str_replace(' ', '-', $new_file_name);
             
         </table>
     </div>
-    <h4>Upload more files <a href="report.php">here</a></h4>
-    <h3><a href="logout.php">Logout</a></h3>
+    <h2 style="text-align:center;">Upload more files <a style="text-decoration:none;" href="report.php">here</a></h2>
 </body>
 </html>

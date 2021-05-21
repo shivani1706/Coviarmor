@@ -21,6 +21,10 @@ if(mysqli_num_rows($result)==1){
     header('location:index.php');
 }
 else{
-    echo "Invalid username or password";
+    ?>
+    <script>
+        alert("Invalid email or password. Please go back and try again");
+    </script>
+    <?php
 }
 ?>
