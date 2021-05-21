@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 60%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1rem;
+            transition: 0.4s;
+            margin: 1rem;
+            
+
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+            border-left: 0.75rem solid rgb(80, 80, 153);
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            color: black;
+            overflow: hidden;
+            width: 60%;
+        }
+        h1{
+            text-align: center;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <h1>ABOUT VACCINE</h1>
+
+    <img src="../assets/aboutVaccine.jpeg" alt="" style="width: 35%; float: right;">
+    <div style="float: left; width: 65%;"></div>
+    <button class="accordion">Which COVID-19 vaccines are licensed in India?<span style="float: right;">&#43;</span></button>
+    <div class="panel">
+        <p>Two vaccines that have been granted emergency use authorization by the Central Drugs Standard Control
+            Organization (CDSCO) in India are Covishield® (AstraZeneca's vaccine manufactured by Serum Institute of
+            India) and Covaxin® (manufactured by Bharat Biotech Limited).</p>
+    </div>
+    <button class="accordion">Is it mandatory to take the vaccine?<span style="float: right;">&#43;</span></button>
+    <div class="panel">
+        <p>Vaccination for COVID-19 is voluntary. However, it is advisable to receive the complete schedule of COVID-19
+            vaccine for protecting oneself against this disease and also to limit the spread of this disease to the
+            close contacts including family members, friends, relatives and co-workers.</p>
+    </div>
+    <button class="accordion">Will the vaccine be safe as it is being tested and introduced in a short span of
+        time?<span style="float: right;">&#43;</span></button>
+    <div class="panel">
+        <p>Vaccines will be introduced in the country only after the regulatory bodies clear it based on its safety and
+            efficacy.</p>
+    </div>
+    <button class="accordion">Out of the multiple vaccines available, how is one or more vaccine chosen for
+        administration?<span style="float: right;">&#43;</span></button>
+    <div class="panel">
+        <p>The safety and efficacy data from clinical trials of vaccine candidates are examined by Drug Regulator of our
+            country before granting the license for the same. Hence, all the COVID-19 vaccines that receive license will
+            have comparable safety and efficacy. However, it must be ensured that the entire schedule of vaccination is
+            completed by only one type of vaccine as different COVID-19 vaccines are not interchangeable.</p>
+    </div>
+    <button class="accordion">Do I have a choice of vaccine I will receive?<span style="float: right;">&#43;</span></button>
+    <div class="panel">
+        <p>The vaccine will be supplied to various parts of India as per availability and distribution plan,
+            beneficiaries load and so at present the option of choice of vaccine is not available.</p>
+    </div>
+    <button class="accordion">What is the dose schedule of both the vaccines?<span style="float: right;">&#43;</span></button>
+    <div class="panel">
+        <p>The time interval between two doses of the Covishield vaccine has been extended from four-six weeks to
+            four-eight weeks. The second dose of Covaxin can be taken four to six weeks after the first.</p>
+    </div>
+    <button class="accordion">Will the vaccine introduced in India be as effective as the ones introduced in other
+        countries?<span style="float: right;">&#43;</span></button>
+    <div class="panel">
+        <p>Yes, the COVID-19 vaccine introduced in India will be as effective as any vaccine developed by other
+            countries. Various phases of vaccine trials are undertaken to ensure its safety and efficacy.</p>
+    </div>
+    <button class="accordion">Out of the multiple vaccines available, how is one or more vaccine chosen for
+        administration?<span style="float: right;">&#43;</span></button>
+    <div class="panel">
+        <p>The safety and efficacy data from clinical trials of vaccine candidates are examined by Drug Regulator of our
+            country before granting the license for the same. Hence, all the COVID-19 vaccines that receive license will
+            have comparable safety and efficacy. However, it must be ensured that the entire schedule of vaccination is
+            completed by only one type of vaccine as different COVID-19 vaccines are not interchangeable.</p>
+    </div>
+    <button class="accordion">Is a COVID-19 vaccine scheduled anytime soon for me?<span style="float: right;">&#43;</span></button>
+    <div class="panel">
+        <p>The COVID-19 vaccine was launched on 16th January, 2021. The first group includes healthcare and frontline
+            workers. The second group to receive COVID-19 vaccine were persons over 60 years of age as of January 1st,
+            2021 and persons between 45 and 59 years with comorbid conditions. This group started receiving vaccinations
+            from March 1st, 2021. From April 1st, 2021, People above the age of 45 years (born before 1st Jan, 1977) are
+            eligible to get the COVID-19 vaccine. From May 1, 2021, all eligible citizens above the age of 18 years can
+            get the COVID-19 vaccine.</p>
+    </div>
+    
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 60%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1rem;
+            transition: 0.4s;
+            margin: 1rem;
+
+
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+            border-left: 0.75rem solid rgb(80, 80, 153);
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            color: black;
+            overflow: hidden;
+            width: 60%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>WHAT TO EXPECT BEFORE VACCINATION?</h1>
+    <img src="../assets/beforeVaccination.png" alt="" style="width: 35%; float: right;">
+    <div style="float: left; width: 65%;"></div>
+    <button class="accordion">What does trial mode mean for a vaccine recipient?<span
+            style="float: right;">&#43;</span></button>
+    <div class="panel">
+        <p>The way we do in a clinical trial phase: first, the recipient will be asked to give a written consent.
+            Additionally, the recipient will be followed up actively to see if the vaccine has led to any side effects.
+            In short, it will be an extension of the Phase 3 trial. But in this, the person would know that he or she
+            has received the vaccine, and not the placebo. It is completely voluntary.</p>
+    </div>
+    <button class="accordion">What is the safety and efficacy of the vaccines used in the country?<span
+            style="float: right;">&#43;</span></button>
+    <div class="panel">
+        <p>To ensure that a vaccine is safe, we need to try it on a large number of people. The vaccine developers have
+            not reduced the sample size at any stage of clinical trials rather it was bigger than what we usually test a
+            vaccine on.
+
+            When a vaccine is tested, most of the adverse events or unwanted effects, if any, occur in the first four to
+            six weeks of its administration. So, in order to ensure that it is safe, we keep a close watch, for the
+            first two-three months, on the people it has been given to. This data help us decide if a vaccine is safe.
+            All concerned in the line of vaccine development, testing and evaluation have followed these procedures to
+            the T. Both Indian vaccines are considered safe on this yardstick.
+
+            As for the efficacy of the vaccine, we need time to tell how effective a vaccine is. All the global agencies
+            have set the benchmark that only those vaccine candidates which show an efficacy of at least 50-60% will be
+            considered. Most of the vaccines have shown an efficacy of 70-90% within the short period of two to three
+            months of observation. Besides when a vaccine is given an emergency use authorizations/permission for
+            restricted use, as in the case of the COVID-19 vaccine, the trial follow-up continues for one-two years to
+            assess the total duration of protection the vaccine will provide.</p>
+    </div>
+    <button class="accordion">Which vaccine is better between Covisheild and Covaxin?<span
+            style="float: right;">&#43;</span></button>
+    <div class="panel">
+        <p>There is no head-to-head comparison done between the two vaccines being used in India so one cannot choose
+            one over the other. Both would work fine in preventing the infection as well as prevent a person from going
+            into severe state of the disease. As a long-term effect, it would be preventing death for elderly people or
+            those who have comorbidities.</p>
+    </div>
+    <button class="accordion">What medications should be avoided before taking COVID-19 vaccine and for how long?<span
+            style="float: right;">&#43;</span></button>
+    <div class="panel">
+        <p>Currently, there is no such instruction. One can take one’s regular medication uninterruptedly. Just inform
+            the vaccinator about the medicines you consume.</p>
+    </div>
+    <button class="accordion">Is the vaccine contraindicated in person with chronic diseases?<span
+            style="float: right;">&#43;</span></button>
+    <div class="panel">
+        <p>Chronic diseases and morbidities like the cardiac, neurological, pulmonary, metabolic, renal and malignancies
+            etc. are not contraindicated. In fact, the benefit of COVID-19 vaccines to reduce the risk of severe
+            COVID-19 disease and death is for those who have these comorbidities.</p>
+    </div>
+   
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
