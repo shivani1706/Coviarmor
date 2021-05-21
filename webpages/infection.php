@@ -63,6 +63,7 @@ $conn->close();
         <li><a href="cowin2.html">Cowin</a></li>
         <li><a href="news.html">News</a></li>
         <li><a href="symptoms.html">Symptoms</a></li>
+       <li class="covirise"><a href="mychart.html">Covid-Rise</a></li>
         <li style="float:right"><a href="logout.php">Logout</a></li>
 
     </ul>
@@ -99,11 +100,11 @@ $conn->close();
             </table>
         </form>
     </div>
-    <div class="container" style="width:100%;">
+    <div class="container" style="width:80%;">
         <div id="chart"></div>
     </div>
     <h3 class="heading">Body temperature graph</h3>
-    <div class="container" style="width:100%;">
+    <div class="container" style="width:80%;">
         <div id="chart2"></div>
     </div>
     <h3 class="heading">Oxygen level graph</h3>

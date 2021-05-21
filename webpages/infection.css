@@ -20,6 +20,8 @@ ul {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    /* margin-left: 9px;
+    margin-right: 9px; */
   }
   
   li a:hover:not(.active) {
@@ -48,6 +50,10 @@ table{
 
 .heading{
     text-align: center;
+    font-weight: bolder;
+    font-size: 45px;
+    color: black;
+
 }
 
 input[type=text], select {
@@ -87,6 +93,23 @@ input[type=text], select {
   
   .form {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #a2b7be;
     padding: 20px;
   }
+  body{
+   background-image: url(https://thumbs.dreamstime.com/z/flat-lay-stethoscope-medical-mask-termometr-pills-other-medicine-related-items-blue-background-flat-lay-stethoscope-179546491.jpg) no-repeat center;
+   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://thumbs.dreamstime.com/z/flat-lay-stethoscope-medical-mask-termometr-pills-other-medicine-related-items-blue-background-flat-lay-stethoscope-179546491.jpg);
+   background-size: cover;
+   width: 98%;
+   height: max-content;
+        position: relative;
+        background-attachment: fixed;
+    
+  }
+ .covirise{
+   text-decoration: none;
+   text-align: center;
+   color: white;
+  
+ }
+  
