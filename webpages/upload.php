@@ -70,8 +70,9 @@ $final_file = str_replace(' ', '-', $new_file_name);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Upload files</title>
 </head>
+
 <style>
     body{
              margin: 0;
@@ -181,16 +182,25 @@ $final_file = str_replace(' ', '-', $new_file_name);
             background-color: #4CAF50;
             color: white;
             }
+           
+.covirise{
+   text-decoration: none;
+   text-align: center;
+   color: white;
+  
+ }
     
 </style>
 <body>
     <ul>
-        <li><a href="index.php">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="infection.php">Infection</a></li>
         <li><a href="report.php" class="active">Reports</a></li>
         <li><a href="cowin2.html">Cowin</a></li>
         <li><a href="news.html">News</a></li>
         <li><a href="symptoms.html">Symptoms</a></li>
+        <li class="covirise"><a href="mychart.html">Covid-Rise</a></li>
+        <li><a href="covidFAQs.html"  class="covirise">Covid-FAQs</a></li>
         <li style="float:right"><a href="logout.php">Logout</a></li>
 
     </ul>

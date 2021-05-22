@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AfterVaccination</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <style>
+        /* * {
+            font-family: 'Architects Daughter', cursive;
+        } */
+
         .accordion {
             background-color: #eee;
             color: #444;
@@ -16,93 +22,130 @@
             border: none;
             text-align: left;
             outline: none;
-            font-size: 1rem;
-            transition: 0.4s;
+            font-size: 1.1rem;
+            /* transition: 0.4s; */
             margin: 1rem;
-
+            font-weight: 900;
+            border-radius: 40px;
+            background-color: rgb(155, 155, 155);
+            color: rgb(34, 18, 18);
 
         }
 
         .active,
         .accordion:hover {
             background-color: #ccc;
-            border-left: 0.75rem solid rgb(80, 80, 153);
+            transform: translateY(-10px);
+            transition: transform 1s;
+            /* border-left: 0.75rem solid rgb(80, 80, 153); */
         }
 
         .panel {
             padding: 0 18px;
             display: none;
-            background-color: white;
-            color: black;
+            /* background-color: white;
+            color: black; */
             overflow: hidden;
             width: 60%;
+            font-weight: bold;
+            border-radius: 40px;
+            background-color: rgb(155, 155, 155);
+            color: rgb(34, 18, 18);
+            font-size: 1.1rem;
         }
 
         h1 {
             text-align: center;
+            font-weight: 1400;
+          font-size: 40px;
         }
+
+        body {
+            background-image: url(https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=volodymyr-hryshchenko-e8YFkjN2CzY-unsplash.jpg);
+            background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=volodymyr-hryshchenko-e8YFkjN2CzY-unsplash.jpg);
+     background-size: cover;
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+            
+        }
+        
     </style>
 </head>
 
 <body>
-    <h1>WHAT TO EXPECT AFTER VACCINATION?</h1>
-    <img src="../assets/afterVaccination.png" alt="" style="width: 35%; float: right;">
-    <div style="float: left; width: 65%;"></div>
+    <section>
+        <h1>WHAT TO EXPECT AFTER VACCINATION?</h1>
+        
 
-    <button class="accordion">Do I need to use the mask/other COVID-19 appropriate precautions after receiving the
-        vaccine?<span style="float: right;">&#43;</span></button>
-    <div class="panel">
-        <p>Yes, it is absolutely necessary that everyone who has received the COVID-19 vaccine should continue to follow
-            the COVID-19 appropriate behaviour i.e., mask, do gaj ki doori and hand sanitization to protect themselves
-            and those around from spreading the infection.</p>
-    </div>
-    <button class="accordion">How long I will remain protected after vaccination?<span
-            style="float: right;">&#43;</span></button>
-    <div class="panel">
-        <p>Longevity of the immune response in vaccinated individuals is yet to be determined. Hence, continuing the use
-            of masks, handwashing, physical distancing and other COVID-19 appropriate behaviours is strongly
-            recommended.</p>
-    </div>
-    <button class="accordion">Does vaccination protect me against newer strains / mutated virus of SARS-CoV 2?<span
-            style="float: right;">&#43;</span></button>
-    <div class="panel">
-        <p>The body responds to vaccination by making more than one type of antibodies to virus parts including spike
-            protein. Therefore, all vaccines are expected to provide reasonable amount of protection against the mutated
-            virus also. Based on the available data the mutations as reported are unlikely to make the vaccine
-            ineffective.</p>
-    </div>
-    <button class="accordion">In how many days will the vaccination create an adequate immune response and
-        protection?<span style="float: right;">&#43;</span></button>
-    <div class="panel">
-        <p>Adequate immune response takes 2-3 weeks after completion of entire vaccination schedule i.e., after the
-            second dose of COVISHIELD® and COVAXIN®.</p>
-    </div>
-    <button class="accordion">Should you avoid alcohol after receiving the COVID-19 vaccine?<span
-            style="float: right;">&#43;</span></button>
-    <div class="panel">
-        <p>As per experts, there is no evidence of alcohol impairing the effectiveness of the vaccine.</p>
-    </div>
-    <button class="accordion">What precautions I need to take after receiving the vaccine?<span
-            style="float: right;">&#43;</span></button>
-    <div class="panel">
-        <p>Both the vaccines are safe but in case of any discomfort or complaint, ask the beneficiary to visit the
-            nearest health facility and/or call the health worker whose phone number is given in the Co-WIN SMS received
-            after vaccination.</p>
-    </div>
-    <button class="accordion">Is it important for me to receive the same vaccine during second dose?<span style="float: right;">&#43;</span></button>
-    <div class="panel">
-        <p>As the vaccines available are not interchangeable, it is important to receive the second dose of same vaccine as the first one. The Co-WIN portal is also going to help to ensure that everyone receives the same vaccine.</p>
-    </div>
-    <button class="accordion">Does this vaccine provide herd immunity?<span style="float: right;">&#43;</span></button>
-    <div class="panel">
-        <p>When an increasing number of people get vaccinated in the community, indirect protection through herd immunity develops. The percentage of people who need to be immune in order to achieve herd immunity varies with each disease. For example, its 95% for measles, however the proportion of the population that must be vaccinated against COVID-19 to begin inducing herd immunity is not known.</p>
-    </div>
-   
+        <button class="accordion">Do I need to use the mask/other COVID-19 appropriate precautions after receiving the
+            vaccine?<span style="float: right;">&#43;</span></button>
+        <div class="panel">
+            <p>Yes, it is absolutely necessary that everyone who has received the COVID-19 vaccine should continue to
+                follow
+                the COVID-19 appropriate behaviour i.e., mask, do gaj ki doori and hand sanitization to protect
+                themselves
+                and those around from spreading the infection.</p>
+        </div>
+        <button class="accordion">How long I will remain protected after vaccination?<span
+                style="float: right;">&#43;</span></button>
+        <div class="panel">
+            <p>Longevity of the immune response in vaccinated individuals is yet to be determined. Hence, continuing the
+                use
+                of masks, handwashing, physical distancing and other COVID-19 appropriate behaviours is strongly
+                recommended.</p>
+        </div>
+        <button class="accordion">Does vaccination protect me against newer strains / mutated virus of SARS-CoV 2?<span
+                style="float: right;">&#43;</span></button>
+        <div class="panel">
+            <p>The body responds to vaccination by making more than one type of antibodies to virus parts including
+                spike
+                protein. Therefore, all vaccines are expected to provide reasonable amount of protection against the
+                mutated
+                virus also. Based on the available data the mutations as reported are unlikely to make the vaccine
+                ineffective.</p>
+        </div>
+        <button class="accordion">In how many days will the vaccination create an adequate immune response and
+            protection?<span style="float: right;">&#43;</span></button>
+        <div class="panel">
+            <p>Adequate immune response takes 2-3 weeks after completion of entire vaccination schedule i.e., after the
+                second dose of COVISHIELD® and COVAXIN®.</p>
+        </div>
+        <button class="accordion">Should you avoid alcohol after receiving the COVID-19 vaccine?<span
+                style="float: right;">&#43;</span></button>
+        <div class="panel">
+            <p>As per experts, there is no evidence of alcohol impairing the effectiveness of the vaccine.</p>
+        </div>
+        <button class="accordion">What precautions I need to take after receiving the vaccine?<span
+                style="float: right;">&#43;</span></button>
+        <div class="panel">
+            <p>Both the vaccines are safe but in case of any discomfort or complaint, ask the beneficiary to visit the
+                nearest health facility and/or call the health worker whose phone number is given in the Co-WIN SMS
+                received
+                after vaccination.</p>
+        </div>
+        <button class="accordion">Is it important for me to receive the same vaccine during second dose?<span
+                style="float: right;">&#43;</span></button>
+        <div class="panel">
+            <p>As the vaccines available are not interchangeable, it is important to receive the second dose of same
+                vaccine as the first one. The Co-WIN portal is also going to help to ensure that everyone receives the
+                same vaccine.</p>
+        </div>
+        <button class="accordion">Does this vaccine provide herd immunity?<span
+                style="float: right;">&#43;</span></button>
+        <div class="panel">
+            <p>When an increasing number of people get vaccinated in the community, indirect protection through herd
+                immunity develops. The percentage of people who need to be immune in order to achieve herd immunity
+                varies with each disease. For example, its 95% for measles, however the proportion of the population
+                that must be vaccinated against COVID-19 to begin inducing herd immunity is not known.</p>
+        </div>
 
 
 
 
 
+
+    </section>
     <script>
         var acc = document.getElementsByClassName("accordion");
         var i;
@@ -117,6 +160,16 @@
                     panel.style.display = "block";
                 }
             });
+        }
+    </script>
+    <script>
+        const banner = document.getElementsByClassName('banner')[0];
+        const blocks = document.getElementsByClassName('blocks');
+        for(var i=0;i<400;i++){
+            banner.innerHTML +="<div class='blocks'></div>";
+            const duration = Math.random()*5;
+            blocks[i].style.animationDuration= 2+duration+'s';
+            blocks[i].style.animationDelay= duration+'s';
         }
     </script>
 </body>

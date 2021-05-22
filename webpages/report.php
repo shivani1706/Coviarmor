@@ -1,6 +1,6 @@
 <?php
 session_start();
-?>
+?> 
 
 
 <!DOCTYPE html>
@@ -9,24 +9,29 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your Reports</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
    
 
 <style>
 
+
         *{
             align-items:center;
             text-align: center;
+            color: white;
         }
-        html{
+        /* html{
             height: 100%;
-        }
+        } */
 
-        body{
+        /* body{
              margin: 0;
-        }
+             background:url("https://www.translatemedia.com/wp-content/uploads/2011/12/medical-translation21.jpg")
+             background-size:cover;
+            
+             } */
 
         ul {
             list-style-type: none;
@@ -84,18 +89,52 @@ session_start();
         .report{
             align-items:center;
             text-align: center;
-            
+            padding: 10px;
+            color: black;
+            font-weight:bold;
+            padding-left:15px;
+            padding-right:15px;
+            border-radius:7px;
+           
         }
        h4{
         font-size: 1.5rem;
        }
-       .covirise{
+       #th{
+           background-color: #fff;
+        #th:hover{
+            background-color:rgb(56,76,89);
+            cursor:pointer;
+        }
+
+       }
+       body{
+   background-image: url(https://previews.123rf.com/images/horacioselva/horacioselva1811/horacioselva181100189/113449815-medical-desk-with-related-articles-neutral-background-of-blue-color-with-medical-utensils-.jpg) no-repeat center;
+   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://previews.123rf.com/images/horacioselva/horacioselva1811/horacioselva181100189/113449815-medical-desk-with-related-articles-neutral-background-of-blue-color-with-medical-utensils-.jpg);
+   background-size: cover;
+   width: 98%;
+   height: max-content;
+        position: relative;
+        background-attachment: fixed;
+    
+  }
+      
+.covirise{
    text-decoration: none;
    text-align: center;
    color: white;
   
  }
-  
+ .repo{
+    padding: 10px;
+            color: black;
+            font-weight:bold;
+            padding-left:15px;
+            padding-right:15px;
+            border-radius:7px;
+           
+ }
+ 
     
 
         
@@ -105,15 +144,17 @@ session_start();
 </head>
 
 <body>
+<section class="bg">
+
     <ul>
-        <li><a href="index.php">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="infection.php">Infection</a></li>
         <li><a href="report.php" class="active">Reports</a></li>
         <li><a href="cowin2.html">Cowin</a></li>
         <li><a href="news.html">News</a></li>
         <li><a href="symptoms.html">Symptoms</a></li>
         <li class="covirise"><a href="mychart.html">Covid-Rise</a></li>
-
+        <li><a href="covidFAQs.html"  class="covirise">Covid-FAQs</a></li>
         <li style="float:right"><a href="logout.php">Logout</a></li>
 
     </ul>
@@ -128,13 +169,14 @@ session_start();
          <input  type="file" class="report" accept="pdf/*" name="file" required><br><br>
     </div>
     <div class="sub">
-      <input class="report" type="submit" name="submit"><br><br>
+      <input class="report" type="submit" name="submit" id="th"><br><br>
     </div>
-    <h4>View your uploaded files <a href="http://localhost/project/webpages/upload.php">here</a></h4>
+    <h4>View your uploaded files <a href="upload.php">here</a></h4>
 
 
 
     </form>
+</section>
 
 </body>
 </html>

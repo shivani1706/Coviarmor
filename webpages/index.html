@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoviArmour</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .site-header{
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(57deg,#a2c7cc,#484f58);
+        clip-path: polygon(0% 0%,100% 0%,100% 75%,0% 100%);
+    }
+    ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+}
+
+li {
+   float: left;
+}
+
+li a {
+   display: flex;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+
+li a:hover:not(.active) {
+   background-color: #111;
+}
+
+.active {
+   background-color: #4CAF50;
+}
+
+li {
+   border-right: 1px solid #bbb;
+}
+
+li:last-child {
+   border-right: none;
+}
+.covirise{
+   text-decoration: none;
+   text-align: center;
+   color: white;
+  
+ }
+ section{
+     display: flex;
+ }
+ .leftside{
+     width: 45%;
+     height: auto;
+    overflow: hidden;
+     margin-top: 80px;
+     margin-left: 70px;
+ }
+ .leftside img{
+     width: 600px;
+     height: auto;
+    margin-top: 80px;
+ }
+ .rightside{
+     width: 55%;
+     height: 300px;
+     color: white;
+     text-align: center;
+     margin-top: 160px;
+     padding: 40px;
+ }
+ .rightside h1{
+     font-size: 50px;
+     font-weight: 900;
+     text-transform: uppercase;
+
+ }
+ .rightside p{
+     font-size: 1.1rem;
+     padding: 30px 0;
+ }
+ .rightside  a{
+     font-size: 17px;
+     font-weight: bold;
+     text-transform: uppercase;
+     background: linear-gradient(57deg,#a2c7cc,#484f58);
+     border-radius: 4px;
+     padding: 20px 35px;
+     color: white;
+     text-decoration: none;
+
+ }
+</style>
+</head>
+<body>
+   <header class="site-header">
+            <ul>
+               <li><a href="index.html"  class="active" >Home</a></li>
+               <li><a href="infection.php">Infection</a></li>
+               <li><a href="report.php">Reports</a></li>
+               <li><a href="cowin2.html">Cowin</a></li>
+               <li><a href="news.html" >News</a></li>
+               <li><a href="symptoms.html">Symptoms</a></li>
+               <li class="covirise"><a href="mychart.html">Covid-Rise</a></li>
+               <li><a href="covidFAQs.html"  class="covirise">Covid-FAQs</a></li>
+       
+               <li style="float:right"><a href="logout.php">Logout</a></li>
+       
+           </ul>
+            <section>
+                <div class="leftside">
+                      <img src="https://o.remove.bg/downloads/2af8583c-2524-43e7-990a-6878dcaa1240/homeimg-removebg-preview.png" alt="">
+                </div>
+                <div class="rightside">
+                    <h1>CoviArmour</h1>
+                    <p>Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.</p>
+                   <a href="login.html">Get started</a>
+                </div>
+       </section>
+   </header>
+    
+</body>
+</html>
