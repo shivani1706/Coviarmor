@@ -61,13 +61,67 @@
      text-decoration: none;
 
  }
+ ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+}
+
+li {
+   float: left;
+}
+
+li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+li a:hover:not(.active) {
+   background-color: #111;
+}
+
+.active {
+   background-color: #4CAF50;
+}
+
+li {
+   border-right: 1px solid #bbb;
+}
+
+li:last-child {
+   border-right: none;
+}
+.covirise{
+   text-decoration: none;
+   text-align: center;
+   color: white;
+  
+ }
 </style>
 </head>
 <body>
+    <ul>
+        <li><a href="index.php"  class="active">Home</a></li>
+        <li><a href="infection.php">Infection</a></li>
+        <li><a href="report.php">Reports</a></li>
+        <li><a href="cowin2.html">Cowin</a></li>
+        <li><a href="news.html" >News</a></li>
+        <li><a href="symptoms.html" >Symptoms</a></li>
+        <li class="covirise"><a href="mychart.html">Covid-Rise</a></li>
+        <li><a href="covidFAQs.html" class="covirise">Covid-FAQs</a></li>
+        <li style="float:right"><a href="logout.php">Logout</a></li>
+
+    </ul>
    <header class="site-header">
             <section>
                 <div class="leftside">
-                      <img src="https://o.remove.bg/downloads/2af8583c-2524-43e7-990a-6878dcaa1240/homeimg-removebg-preview.png" alt="">
+                      <img src="../assets/homeimg-removebg-preview.png" alt="">
                 </div>
                 <div class="rightside">
                     <h1>CoviArmour</h1>

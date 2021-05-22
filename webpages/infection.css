@@ -90,6 +90,7 @@ input[type=text], select {
   .form {
     border-radius: 5px;
     padding: 20px;
+    background-color:rgb(145, 159, 173);
   }
   body{
    background-image: url(../assets/infection.jpg) no-repeat center;
