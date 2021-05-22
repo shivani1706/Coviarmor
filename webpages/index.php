@@ -11,7 +11,7 @@ if(!$_SESSION['auth']){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <style>
 
 <style>
@@ -217,7 +217,7 @@ if(!$_SESSION['auth']){
     </ul>
     
     <div class="slideshow-container">
-    <h1 style="text-align: center;">Welcome to Coviarmour</h1>
+    <h1 style="text-align: center;">Welcome to Coviarmor</h1>
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
             <img src="../assets/BANNER1.jpeg" style="width:100%">
