@@ -57,7 +57,7 @@ $conn->close();
 }
 ?>
      <ul>
-        <li><a href="index.php">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="infection.php" class="active">Infection</a></li>
         <li><a href="report.php">Reports</a></li>
         <li><a href="cowin2.html">Cowin</a></li>

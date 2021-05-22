@@ -110,7 +110,7 @@ session_start();
 
 <body>
     <ul>
-        <li><a href="#home">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="infection.php">Infection</a></li>
         <li><a href="report.php" class="active">Reports</a></li>
         <li><a href="cowin2.html">Cowin</a></li>
