@@ -39,7 +39,11 @@ $password = $_POST['password'];
 
 $query = "INSERT INTO signup VALUES ('$name', '$email', '$phone', '$password')";
 if(mysqli_query($conn, $query)){
-    echo "You have been registered successfully";
+    ?>
+    <script>
+        alert("You have been registered successfully");
+    </script>
+    <?php    
  }
  else{
      echo "Error:" . $query . "" . mysqli_error($conn);
@@ -57,7 +61,7 @@ if(mysqli_query($conn, $query)){
     </div>
     <div>
     <h1>Coviarmour</h1>
-        <form action="login.html" method="POST" id="signup">
+        <form action="signup.php" method="POST" id="signup">
             <table>
             <tr>
                     <th>
