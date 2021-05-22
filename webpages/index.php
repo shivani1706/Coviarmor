@@ -197,7 +197,7 @@ if(!$_SESSION['auth']){
     <ul>
         <li><a href="index.php" class="active">Home</a></li>
         <li><div>
-                <form action="http://localhost/project/webpages/infection.php" method="POST" class="form">
+                <form action="infection.php" method="POST" class="form">
                     <input type="submit" name="infection" id="infection" value="Infection" >
                 </form>
             </div>
