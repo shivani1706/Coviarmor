@@ -1,0 +1,67 @@
+body{
+    background-image: url("https://fundacioncarlosslim.org/wp-content/uploads/2020/04/curso-abc-vac-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+#pincode{
+    font-size: 15px;
+    font-family: sans-serif;
+    border-radius: 3px;
+    padding: 8px;
+    
+}
+#date{
+    font-size: 15px;
+    font-family: sans-serif;
+    border-radius: 3px;
+    padding: 8px;
+}
+.container{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 60px;
+    margin-left: 24%;
+    
+}
+#aj1{
+    margin-left: 10px;
+}
+#submit{
+    margin-left: 160px;
+    font-size: 15px;
+    background-color: coral;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 20%;
+}
+#reset{
+    font-size: 15px;
+    background-color: coral;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#submit:hover{
+    background-color:rgb(228, 37, 37); 
+}
+#reset:hover{
+    background-color:rgb(228, 37,37);
+}
+.table table-striped{
+    background-color: forestgreen;
+    background-position: left;
+    background-size: 50%;
+
+}
+.ft{
+    margin-top: 10px;
+}
