@@ -45,8 +45,12 @@ $final_file = str_replace(' ', '-', $new_file_name);
     else{
         if (move_uploaded_file($file_loc, $folder.$final_file)) {
             $query = "INSERT INTO report VALUES ('$email', '$final_file', '$file_type', '$new_size')";
-        mysqli_query($conn, $query);
-                echo "Your report has been uploaded successfully";
+            mysqli_query($conn, $query);
+            ?>
+            <script>
+                alert("Your report has been uploaded successfully");
+            </script>
+            <?php    
             }
             else {
              ?>   

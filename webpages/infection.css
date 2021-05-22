@@ -1,7 +1,3 @@
-body{
-    margin: 0;
-}
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -93,14 +89,13 @@ input[type=text], select {
   
   .form {
     border-radius: 5px;
-    background-color: #a2b7be;
     padding: 20px;
   }
   body{
-   background-image: url(https://thumbs.dreamstime.com/z/flat-lay-stethoscope-medical-mask-termometr-pills-other-medicine-related-items-blue-background-flat-lay-stethoscope-179546491.jpg) no-repeat center;
-   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://thumbs.dreamstime.com/z/flat-lay-stethoscope-medical-mask-termometr-pills-other-medicine-related-items-blue-background-flat-lay-stethoscope-179546491.jpg);
+   background-image: url(../assets/infection.jpg) no-repeat center;
+   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../assets/infection.jpg);
    background-size: cover;
-   width: 98%;
+   margin: 0;
    height: max-content;
         position: relative;
         background-attachment: fixed;
