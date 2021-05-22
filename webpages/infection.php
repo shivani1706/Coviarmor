@@ -64,6 +64,7 @@ $conn->close();
         <li><a href="news.html">News</a></li>
         <li><a href="symptoms.html">Symptoms</a></li>
        <li class="covirise"><a href="mychart.html">Covid-Rise</a></li>
+       <li><a href="covidFAQs.html"  class="covirise">Covid-FAQs</a></li>
         <li style="float:right"><a href="logout.php">Logout</a></li>
 
     </ul>

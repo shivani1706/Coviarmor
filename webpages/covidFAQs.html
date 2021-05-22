@@ -14,6 +14,7 @@
 
         body {
             font-family: Verdana, sans-serif;
+           background-color: rgb(155, 167, 170);
         }
 
         .mySlides {
@@ -63,7 +64,7 @@
         }
 
         .active {
-            background-color: #717171;
+            background-color: #7a817a;
         }
 
         /* Fading animation */
@@ -101,12 +102,14 @@
         .icons {
             display: flex;
             justify-content: center;
+            
         }
 
         .icon {
             background-color: rgb(182, 168, 168);
             margin: 1rem 1rem;
             padding: 1rem 1rem;
+            border-radius: 10px;
         }
 
         .side-effect {
@@ -123,10 +126,53 @@
             border: 2px solid black;
             text-decoration: none;
             background-color: rgba(180, 138, 99, 0.5);
+           
         }
         a {
             text-decoration: none;
+           
         }    
+        ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+}
+
+li {
+   float: left;
+}
+
+li a {
+   display: flex;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+
+li a:hover:not(.act) {
+   background-color: #111;
+}
+
+.act {
+   background-color: #4CAF50;
+}
+
+li {
+   border-right: 1px solid #bbb;
+}
+
+li:last-child {
+   border-right: none;
+}
+.covirise{
+   text-decoration: none;
+   text-align: center;
+   color: white;
+  
+ }
 
 
         
@@ -134,6 +180,19 @@
 </head>
 
 <body>
+    <ul>
+        <li><a href="index.html"  >Home</a></li>
+        <li><a href="infection.php">Infection</a></li>
+        <li><a href="report.php">Reports</a></li>
+        <li><a href="cowin2.html">Cowin</a></li>
+        <li><a href="news.html" >News</a></li>
+        <li><a href="symptoms.html">Symptoms</a></li>
+        <li class="covirise"><a href="mychart.html">Covid-Rise</a></li>
+        <li><a href="covidFAQs.html"  class="covirise" class="act">Covid-FAQs</a></li>
+
+        <li style="float:right"><a href="logout.php">Logout</a></li>
+
+    </ul>
     <h1>COVID VACCINATION</h1>
     <div class="slideshow-container">
 
@@ -189,34 +248,34 @@
     <h1>FREQUENTLY ASKED QUESTIONS</h1>
     <div class="icons">
         <div class="icon">
-            <a href="aboutVaccine.html">
+            <a href="Aboutvaccine.html">
                 <h2>ABOUT VACCINE</h2>
             </a>
         </div>
         <div class="icon">
-            <a href="whoGetsVaccine.html">
+            <a href="whowillget.html">
                 <h2>WHO WILL GET THE VACCINE?</h2>
             </a>
         </div>
         <div class="icon">
-            <a href="howToGetVaccine.html">
+            <a href="howvaccinated.html">
                 <h2>HOW WILL WE BE VACCINATED?</h2>
             </a>
         </div>
     </div>
     <div class="icons">
         <div class="icon">
-            <a href="beforeVaccination.html">
+            <a href="BeforeVaccination.html">
                 <h2>WHAT TO EXPECT BEFORE VACCINE?</h2>
             </a>
         </div>
         <div class="icon">
-            <a href="afterVaccination.html">
+            <a href="AfterVaccination.html">
                 <h2>WHAT TO EXPECT AFTER VACCINE?</h2>
             </a>
         </div>
         <div class="icon">
-            <a href="allAboutCovid.html">
+            <a href="Aboutcovid.html">
                 <h2>ALL ABOUT COVID</h2>
             </a>
         </div>

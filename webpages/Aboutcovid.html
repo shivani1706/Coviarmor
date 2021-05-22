@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About covid</title>
     <style>
         .accordion {
             background-color: #eee;
@@ -17,8 +17,15 @@
             text-align: left;
             outline: none;
             font-size: 1rem;
-            transition: 0.4s;
+            /* transition: 0.4s; */
             margin: 1rem;
+            font-size: 1.1rem;
+            /* transition: 0.4s; */
+            margin: 1rem;
+            font-weight: 900;
+            border-radius: 40px;
+            background-color: rgb(155, 155, 155);
+            color: rgb(34, 18, 18);
 
 
         }
@@ -26,29 +33,45 @@
         .active,
         .accordion:hover {
             background-color: #ccc;
-            border-left: 0.75rem solid rgb(80, 80, 153);
+            /* border-left: 0.75rem solid rgb(80, 80, 153); */
+            transform: translateY(-10px);
+            transition: transform 1s;
         }
 
         .panel {
             padding: 0 18px;
             display: none;
-            background-color: white;
-            color: black;
+            /* background-color: white;
+            color: black; */
             overflow: hidden;
             width: 60%;
+            font-weight: bold;
+            border-radius: 40px;
+            background-color: rgb(155, 155, 155);
+            color: rgb(34, 18, 18);
+            font-size: 1.1rem;
         }
 
         h1 {
             text-align: center;
+            font-weight: 1400;
+          font-size: 40px;
+        }
+        body {
+            background-image: url(https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=volodymyr-hryshchenko-e8YFkjN2CzY-unsplash.jpg);
+            background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=volodymyr-hryshchenko-e8YFkjN2CzY-unsplash.jpg);
+     background-size: cover;
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+            
         }
     </style>
 </head>
 
 <body>
     <h1>ALL ABOUT COVID</h1>
-    <img src="../assets/aboutCovid.jpg" alt="" style="width: 35%; float: right; height: 800px;">
 
-    <div style="float: left; width: 65%;"></div>
     <button class="accordion">What is COVID-19?<span style="float: right;">&#43;</span></button>
     <div class="panel">
         <p>COVID-19 is the disease caused by a new coronavirus called SARS-CoV-2. WHO first learned of this new virus on
@@ -139,7 +162,7 @@
             those at higher risk of severe illness such as older people, especially those living in seniors’ residences
             or long-term care facilities.</p>
     </div>
-    <button class="accordion">What test should i get to see whethr i am COVID positive?<span
+    <button class="accordion">What test should i get to see whether i am COVID positive?<span
             style="float: right;">&#43;</span></button>
     <div class="panel">
         <p>In most situations, a molecular test is used to detect SARS-CoV-2 and confirm infection. Polymerase chain
@@ -148,7 +171,7 @@
             levels. For this reason, a molecular test is used to confirm an active infection, usually within a few days
             of exposure and around the time that symptoms may begin. </p>
     </div>
-    <button class="accordion">What about rpid test?<span style="float: right;">&#43;</span></button>
+    <button class="accordion">What about rapid test?<span style="float: right;">&#43;</span></button>
     <div class="panel">
         <p>Rapid antigen tests (sometimes known as a rapid diagnostic test – RDT) detect viral proteins (known as
             antigens). Samples are collected from the nose and/or throat with a swab. These tests are cheaper than PCR
