@@ -137,14 +137,13 @@ session_start();
 <section class="bg">
 
     <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a href="infection.php">Infection</a></li>
         <li><a href="report.php" class="active">Reports</a></li>
         <li><a href="cowin2.html">Cowin</a></li>
         <li><a href="news.html">News</a></li>
         <li><a href="symptoms.html">Symptoms</a></li>
         <li class="covirise"><a href="mychart.html">Covid-Rise</a></li>
-        <li><a href="covidFAQs.html" class="covirise">Covid-FAQs</a></li>
         <li style="float:right"><a href="logout.php">Logout</a></li>
 
     </ul>
