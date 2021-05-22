@@ -68,6 +68,7 @@ $final_file = str_replace(' ', '-', $new_file_name);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload files</title>
 </head>
+
 <style>
     body{
              margin: 0;

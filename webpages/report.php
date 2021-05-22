@@ -1,6 +1,6 @@
 <?php
 session_start();
-?>
+?> 
 
 
 <!DOCTYPE html>
@@ -9,16 +9,18 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your Reports</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
    
 
 <style>
 
+
         *{
             align-items:center;
             text-align: center;
+            color: white;
         }
         /* html{
             height: 100%;
@@ -87,7 +89,13 @@ session_start();
         .report{
             align-items:center;
             text-align: center;
-            
+            padding: 10px;
+            color: black;
+            font-weight:bold;
+            padding-left:15px;
+            padding-right:15px;
+            border-radius:7px;
+           
         }
        h4{
         font-size: 1.5rem;
@@ -100,6 +108,16 @@ session_start();
         }
 
        }
+       body{
+   background-image: url(https://previews.123rf.com/images/horacioselva/horacioselva1811/horacioselva181100189/113449815-medical-desk-with-related-articles-neutral-background-of-blue-color-with-medical-utensils-.jpg) no-repeat center;
+   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://previews.123rf.com/images/horacioselva/horacioselva1811/horacioselva181100189/113449815-medical-desk-with-related-articles-neutral-background-of-blue-color-with-medical-utensils-.jpg);
+   background-size: cover;
+   width: 98%;
+   height: max-content;
+        position: relative;
+        background-attachment: fixed;
+    
+  }
       
 .covirise{
    text-decoration: none;
@@ -107,7 +125,16 @@ session_start();
    color: white;
   
  }
-   
+ .repo{
+    padding: 10px;
+            color: black;
+            font-weight:bold;
+            padding-left:15px;
+            padding-right:15px;
+            border-radius:7px;
+           
+ }
+ 
     
 
         
@@ -117,6 +144,8 @@ session_start();
 </head>
 
 <body>
+<section class="bg">
+
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="infection.php">Infection</a></li>
@@ -146,6 +175,7 @@ session_start();
 
 
     </form>
+</section>
 
 </body>
 </html>
