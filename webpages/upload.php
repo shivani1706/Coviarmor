@@ -76,10 +76,7 @@ $final_file = str_replace(' ', '-', $new_file_name);
 <style>
     body{
              margin: 0;
-<<<<<<< HEAD
-=======
              background-color: rgba(205, 250, 206,0.5);
->>>>>>> e9cb9f355e12091ee3a21c72c25d695b7ee8ead9
         }
 
         ul {

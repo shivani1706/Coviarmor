@@ -22,17 +22,7 @@ session_start();
             text-align: center;
             color: white;
         }
-        /* html{
-            height: 100%;
-        } */
-
-        /* body{
-             margin: 0;
-             background:url("https://www.translatemedia.com/wp-content/uploads/2011/12/medical-translation21.jpg")
-             background-size:cover;
-            
-             } */
-
+        
         ul {
             list-style-type: none;
             margin: 0;
@@ -112,7 +102,7 @@ session_start();
    background-image: url(https://previews.123rf.com/images/horacioselva/horacioselva1811/horacioselva181100189/113449815-medical-desk-with-related-articles-neutral-background-of-blue-color-with-medical-utensils-.jpg) no-repeat center;
    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://previews.123rf.com/images/horacioselva/horacioselva1811/horacioselva181100189/113449815-medical-desk-with-related-articles-neutral-background-of-blue-color-with-medical-utensils-.jpg);
    background-size: cover;
-   width: 98%;
+   margin: 0;
    height: max-content;
         position: relative;
         background-attachment: fixed;
@@ -147,14 +137,13 @@ session_start();
 <section class="bg">
 
     <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a href="infection.php">Infection</a></li>
         <li><a href="report.php" class="active">Reports</a></li>
         <li><a href="cowin2.html">Cowin</a></li>
         <li><a href="news.html">News</a></li>
         <li><a href="symptoms.html">Symptoms</a></li>
         <li class="covirise"><a href="mychart.html">Covid-Rise</a></li>
-        <li><a href="covidFAQs.html"  class="covirise">Covid-FAQs</a></li>
         <li style="float:right"><a href="logout.php">Logout</a></li>
 
     </ul>
