@@ -20,16 +20,16 @@ session_start();
             align-items:center;
             text-align: center;
         }
-        html{
+        /* html{
             height: 100%;
-        }
+        } */
 
-        body{
+        /* body{
              margin: 0;
              background:url("https://www.translatemedia.com/wp-content/uploads/2011/12/medical-translation21.jpg")
              background-size:cover;
             
-             }
+             } */
 
         ul {
             list-style-type: none;
@@ -93,13 +93,21 @@ session_start();
         font-size: 1.5rem;
        }
        #th{
-           background-color:#fff;
+           background-color: #fff;
         #th:hover{
             background-color:rgb(56,76,89);
             cursor:pointer;
         }
 
        }
+      
+.covirise{
+   text-decoration: none;
+   text-align: center;
+   color: white;
+  
+ }
+   
     
 
         
@@ -116,6 +124,7 @@ session_start();
         <li><a href="cowin2.html">Cowin</a></li>
         <li><a href="news.html">News</a></li>
         <li><a href="symptoms.html">Symptoms</a></li>
+        <li class="covirise"><a href="mychart.html">Covid-Rise</a></li>
         <li style="float:right"><a href="logout.php">Logout</a></li>
 
     </ul>
@@ -132,7 +141,7 @@ session_start();
     <div class="sub">
       <input class="report" type="submit" name="submit" id="th"><br><br>
     </div>
-    <h4>View your uploaded files <a href="http://localhost/project/webpages/upload.php">here</a></h4>
+    <h4>View your uploaded files <a href="upload.php">here</a></h4>
 
 
 
